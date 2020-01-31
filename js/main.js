@@ -1,32 +1,24 @@
-var messagesRef=firebase.database().ref('messages')
+var messagesRef=firebase.database().ref('messages');
 
 
 document.getElementById('search-blood-form').addEventListener('submit', submitForm);
 
 function submitForm(e){
     e.preventDefault();
-    var name = inputVal('blood-type');
-    var state = inputVal('state');
-    var city = inputVal('city');
-
-    saveMessage(blood-type, state, city)
-
-}
-
-
-
-function inputVal(id){
-    return document.getElementById(id).value;
-
-
+    
+    var city = $('#city');
+    var bloodType = $('blood-type');
+    saveMessage(bloodType,city);
 
 }
-function saveMessage(blood-type, state, city){
+
+
+
+function saveMessage(bloodType,city){
     var newMessageRef=messagesRef.push();
     newMessageRef.set({
-        blood-type:blood-type,
-        state:state,
-        city:city
+        'blood-type': bloodType.value,
+         'city':city.value
 
 
     })

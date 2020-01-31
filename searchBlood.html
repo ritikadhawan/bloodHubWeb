@@ -13,20 +13,27 @@
     <title>Blood Hub</title>
 </head>
 <body class="flex-col flex-center">
-    <form action="" id="search-blood-form" class="flex-col flex-center ">
+    <form action="" id="search-blood-form" class="flex-col flex-center " autocomplete="off" >
         <div class="form-element flex-col">
             <label for="blood-type" class="form-element-heading" >Blood Type</label>
-            <input type="text" name="blood-type" id="blood-type" class="round-corners">
+            <select name="blood-type" id="blood-type" class="round-corners">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+
+            </select>
         </div>
         
-        <div class="form-element flex-col">
-            <label for="state" class="form-element-heading">State</label>
-            <input type="text" name="state" id="state" class="round-corners">
-        </div>
-        
-        <div class="form-element flex-col" >
+        <div class="form-element flex-col autocomplete" >
             <label for="city" class="form-element-heading" >City</label>
             <input type="text" name="city" id="city" class="round-corners">
+            </input>
+
         </div>
 
         
@@ -37,12 +44,17 @@
         
 
     </form>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+    <script src="./js/states.js"></script>
+
     <script src="/__/firebase/7.8.0/firebase-app.js"></script>
     <script src="/__/firebase/init.js"></script>
-    <script src = "main.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src = "./js/main1.js"></script>
+    
    
 </body>
 </html>
