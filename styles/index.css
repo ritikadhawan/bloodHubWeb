@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 99vh;
+    background-color: ;
+}
+
+/* utility classes */
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+/*get element by id*/
+#login-signup{
+    justify-content: space-evenly;
+}
+.flex-item{
+    margin: auto;
+}
+#logo{
+    justify-self: flex-start;
+}
