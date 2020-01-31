@@ -17,7 +17,6 @@ body{
 #navbar{
     background-color: var(--background-color-light);
     height: 3.2rem;
-    /* padding: 0.2rem; */
     padding-left: 1rem;
     align-items: center;
 }

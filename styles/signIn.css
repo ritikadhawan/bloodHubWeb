@@ -1,0 +1,84 @@
+:root{
+    --background-color-dark: #000000;
+    --background-color-light: #323232;
+    --text-color: #ffffff;
+    --color-bright: #7FCD91;
+    --text-font: 'quicksand';
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 99vh;
+    width: 100%;
+    background-color: var(--background-color-dark);
+    font-family: var(--text-font);
+}
+/**navbar**/
+#navbar{
+    background-color: var(--background-color-light);
+    height: 3.2rem;
+    padding-left: 1rem;
+    align-items: center;
+}
+#navbar div{
+    margin-right: 3rem;
+}
+/* blood hub logo  */
+#blood-hub-logo{
+    margin-right: auto!important;
+}
+#blood-hub-logo svg {
+    width: 10rem;
+    height: 10rem;
+   
+}
+/* nav links */
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+/*sign in form*/
+#sign-in-form,#register-form{
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    width: 35rem;
+    margin: auto;
+    margin-top:8rem;
+    height: 30%;
+    color: var(--text-color);
+    justify-content: space-evenly;
+    background-color: var(--background-color-light);
+}
+#form label{
+    margin-right: 0.5rem;
+}
+
+section{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+    margin-bottom: -4rem;
+}
+/* utility classes */
+.round-corners{
+    border-radius: 3rem;
+}
+.flex-row{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
