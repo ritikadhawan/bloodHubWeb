@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 99vh;
+    background-color: ;
 }
 /* search blood form */
 #search-blood-form{
@@ -11,7 +12,7 @@ body{
 }
 /* form elements */
 .form-element{
-    
+
 }
 /* utility classes */
 .flex-row{
