@@ -1,25 +1,52 @@
+:root{
+    --background-color-dark: #000000;
+    --background-color-light: #323232;
+    --text-color: #ffffff;
+    --color-bright: #7FCD91;
+    --text-font: 'quicksand';
+}
 body{
     margin: 0;
     padding: 0;
     height: 99vh;
-    background-color: ;
+    background-color: var(--background-color-dark) ;
+    width: 100%;
 }
-
-/* utility classes */
-.flex-row{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aqua;
-    justify-content: space-between;
+/** navbar **/
+#navbar{
+    background-color: var(--background-color-light);
+    width: 100%;
+    height: 3.2rem;
+    /* padding: 0.2rem; */
+    padding-left: 1rem;
     align-items: center;
 }
-/*get element by id*/
-#login-signup{
-    justify-content: space-evenly;
+/* blood hub logo  */
+#blood-hub-logo svg {
+    width: 7rem;
+    height: 5rem;
+   
 }
-.flex-item{
-    margin: auto;
+
+
+/* utility classes */
+.round-corners{
+    border-radius: 3rem;
 }
-#logo{
-    justify-self: flex-start;
+.flex-row{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
 }

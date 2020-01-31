@@ -1,20 +1,51 @@
+:root{
+    --background-color-dark: #000000;
+    --background-color-light: #323232;
+    --text-color: #ffffff;
+    --color-bright: #7FCD91;
+    --text-font: 'quicksand';
+}
 body{
     margin: 0;
     padding: 0;
     height: 99vh;
-    background-color: ;
+    background-color: var(--background-color-dark);
+    color: var(--text-color);
 }
 /* search blood form */
 #search-blood-form{
-    width: 100%;
+    width: 40%; 
     height: 90%;
-    justify-content: space-evenly;
+    border-radius: 2rem;
+    /* justify-content: space-evenly; */
+    background-color: var(--background-color-light);
+    font-family: var(--text-font);
+    font-size: 1.2rem;
 }
 /* form elements */
 .form-element{
+    margin: 1.3rem;
+}
+.form-element .form-element-heading{
+    margin-bottom: 0.5rem;
+}
+/* form submit button  */
+#form-submit-button input{
+    background-color: var(--color-bright);
+    border: none;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
 
 }
+#form-submit-button{
+    
+}
 /* utility classes */
+.round-corners{
+    border-radius: 3rem;
+}
 .flex-row{
     display: flex;
 }
